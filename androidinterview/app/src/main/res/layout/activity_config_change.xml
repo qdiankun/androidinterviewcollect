@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_config_interview"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/item_selector"
+        android:text="有关Config的一道面试题解析"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_config_recoverdata"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/item_selector"
+        android:text="旋转屏幕后恢复数据"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="执行异步请求任务，显示进度条，异步任务完成后，显示请求到信息"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会差生如下两个问题：\n1.加载完成后，旋转屏幕，请求到的数据消失\n2.在显示进度条的时候，旋转屏幕报错"
+        android:textColor="@color/transparent_red"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_config_asyn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/item_selector"
+        android:text="异步任务请求数据"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

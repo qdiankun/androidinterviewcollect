@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.me.diankun.interview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LifeActivity"/>
+        <activity android:name=".DialogActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".NextActivity"/>
+
+        <activity android:name=".ConfigChangeActivity" />
+        <!-- 设置翻转屏幕后Activity不会重新创建 android:configChanges="orientation|keyboardHidden|screenSize" -->
+        <activity
+            android:name=".ConfigChangeInterviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ConfigChangeRecoverDataActivity"
+            />
+
+
+        <!--
+            不重新创建Activity
+              禁止屏幕旋转
+                android:screenOrientation="portrait"
+              配置config属性
+                android:configChanges="orientation|keyboardHidden|screenSize"
+        -->
+        <activity android:name=".ConfigChangeAsynActivity"
+            />
+        <activity android:name=".ConfigChangeUseFragActivity"></activity>
+        <activity android:name=".ConfigFinalActivity"></activity>
+        <activity android:name=".ConfigFinalTwoActivity"></activity>
+    </application>
+
+</manifest>

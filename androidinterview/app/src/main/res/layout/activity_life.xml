@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity的生命周期"
+        android:textColor="@color/transparent_red"
+        android:padding="5dip"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/btn_opendialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/item_selector"
+        android:padding="5dip"
+        android:text="打开对话框"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_dialogActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/item_selector"
+        android:padding="5dip"
+        android:text="打开一块显示区域的Activity"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_nextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/item_selector"
+        android:padding="5dip"
+        android:text="打开另外一个Activity"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+
+</LinearLayout>
