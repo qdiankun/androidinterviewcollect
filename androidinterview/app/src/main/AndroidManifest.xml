@@ -41,6 +41,9 @@
         <activity android:name=".ConfigChangeUseFragActivity"></activity>
         <activity android:name=".ConfigFinalActivity"></activity>
         <activity android:name=".ConfigFinalTwoActivity"></activity>
+        <activity android:name=".LayoutWeightActivity"></activity>
+        <activity android:name=".UiOptimizeActivity"></activity>
+        <activity android:name=".StubActivity"></activity>
     </application>
 
 </manifest>

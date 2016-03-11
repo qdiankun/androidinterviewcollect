@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意事项："
+            android:textColor="@color/sky_blue"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dip"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.判断是否已经加载过， 如果通过setVisibility来加载，那么通过判断可见性即可；如果通过inflate()来加载是不可以通过判断可见性来处理的，而需要使用方式2来进行判断。 \n 2.findViewById的问题，注意ViewStub中是否设置了inflatedId，如果设置了则需要通过inflatedId来查找目标布局的根元素。没有的话直接使用根布局即可"
+            android:textColor="@color/transparent_red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/stub_import"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:inflatedId="@+id/stub_comm_lv"
+        android:layout="@layout/my_comment_layout"></ViewStub>
+</LinearLayout>
+
+

@@ -14,8 +14,14 @@ public class MainActivity extends AppCompatActivity {
 
     private Context context = this;
 
-    private final String[] items = {"查看Activity的生命周期","旋转屏幕后获取数据"};
-    private final Class<?>[] classes = {LifeActivity.class,ConfigChangeActivity.class};
+    private final String[] items = {
+            "查看Activity的生命周期","旋转屏幕后获取数据","laout_weight属性有关",
+            "UI优化的几种方法"
+    };
+    private final Class<?>[] classes = {
+            LifeActivity.class,ConfigChangeActivity.class,LayoutWeightActivity.class,
+            UiOptimizeActivity.class
+    };
     private ArrayAdapter<String> mAdapter ;
 
     @Override

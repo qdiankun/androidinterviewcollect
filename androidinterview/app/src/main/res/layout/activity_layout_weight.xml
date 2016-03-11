@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_normal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/edit_normal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dip"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.第一个TextView，上面空出一部分，文字和其他两个TextView在同一条线上，第一个元素在同一条线上"
+                android:textColor="@color/transparent_red"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="1"
+                android:background="#44ff0000"
+                android:gravity="center"
+                android:text="111111111111111" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="2"
+                android:background="#4400ff00"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="3"
+                android:background="#440000ff"
+                android:gravity="center"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.设置baselineAligned为false，使三个TextView中的文字无需在同一条线上"
+                android:textColor="@color/transparent_red"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="1"
+                android:background="#44ff0000"
+                android:gravity="center"
+                android:text="111111111111111" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="2"
+                android:background="#4400ff00"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="3"
+                android:background="#440000ff"
+                android:gravity="center"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.设置第一个TextView中的width为wrap_content,三个TextView的layout_weight分别为1,2,3;显示并不是我们所期望的比例"
+                android:textColor="@color/transparent_red"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dip"
+                android:layout_weight="1"
+                android:background="#44ff0000"
+                android:gravity="center"
+                android:text="111111111111111" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="2"
+                android:background="#4400ff00"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="3"
+                android:background="#440000ff"
+                android:gravity="center"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="解释：LinearLayout中的layout_weight属性，首先按照控件声明的尺寸进行分配(可以负数)，然后再将剩下的尺寸按weight分配"
+                android:textColor="@color/sky_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.设置三个TextView中的width都设置为match_parent,三个TextView的layout_weight分别为1,2,2;第一个占据空间最大"
+                android:textColor="@color/transparent_red"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_weight="1"
+                android:background="#44ff0000"
+                android:gravity="center"
+                android:text="111111111111111" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_weight="2"
+                android:background="#4400ff00"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_weight="2"
+                android:background="#440000ff"
+                android:gravity="center"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dip"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="解释：假设整个的宽度是480，但现在每个TextView都占用了480，不够分的\n 剩余的只能按如下的计算：rest = 480 - 480*3 = -480*2 \n TextView1:480-(480*2)/5=480*3/5 \n TextView2,3:480-(480*2)2/5=480/5 \n 结论：空间宽度+父空间剩余宽度*比例"
+                android:textColor="@color/sky_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.TextView设置成只占宽度的一半，父布局设置android:weightSum=2，子控件TextView设置layout_weight=1，layout_width=0,宽度只占据一半"
+                android:textColor="@color/transparent_red"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="1"
+                android:background="#44ff0000"
+                android:gravity="center"
+                android:text="111111111111" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dip"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="layout_属性总结：layout_开头的属性交给父控件去分配，；\n例子： \nlayout_gravity[交给容器去处理，view在容器中的堆积方式]\ngravity[View自己内容的堆积方式]"
+                android:textColor="@color/sky_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
