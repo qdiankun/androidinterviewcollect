@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="如何自定义控件?"
+        android:textColor="@color/sky_blue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.自定义属性的声明与获取 \n2. 测量onMeasure() \n3. 布局onLayout(ViewGroup) \n4. 绘制onDraw \n5. onTouchEvent \n6. onInterceptTouchEvent(ViewGroup)"
+        android:textColor="@color/transparent_red"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分析自定View有哪些属性，在自定义构造方法中获取，获取到后重写其测量onMeasure()方法，决定我们的View到底占据多大的空间，测量完成后，重写onDraw()绘制到底显示什么样的形态"
+        android:textColor="@color/sky_blue"
+        android:textSize="22sp"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="如果自定义ViewGroup 测量自身的大小和子View的大小，onLayout决定子View放置的规则；如果有和用户的交互需要重写onTouchEvent 如何与用户交互和onInterceptTouchEvent决定是否拦截事件"
+        android:textColor="@color/sky_blue"
+        android:textSize="22sp"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
